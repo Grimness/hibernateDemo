@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- 管理对应某张数据库表的映射关系 -->
+<hibernate-mapping package="top.lilianghy.entity">
+	<class name="Employee" table="employee">
+	<!-- 主键 -->
+		<id name="empId"  column="id">
+				<generator class="native"></generator>
+		</id>
+		<!-- 其他字段 -->
+		<property name="empName" column="name" >
+				
+		</property>
+		<property name="salary" column="salary" >
+		
+		</property>
+		<property name="brith" column="brith" >
+		
+		</property>
+	</class>
+</hibernate-mapping>
+
+
+
